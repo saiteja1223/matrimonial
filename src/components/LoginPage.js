@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {link} from 'react-router-dom'
+import {Link, link} from 'react-router-dom'
 function LoginPage() {
     const [formData, setFormData] = useState({
         email: '',
@@ -45,6 +45,8 @@ function LoginPage() {
                 <FormInput label="Password" name="password" type="password" value={formData.password} onChange={handleChange} error={errors.password} />
 
                 <button type="submit" style={styles.submitButton}>Login</button>
+
+              <Link to={'/forgotpassword'}> <button>Forgot Password</button></Link> 
                 {/* <link>click </link> */}
             </form>
         </div>

@@ -7,6 +7,9 @@ import LoginPage from './components/LoginPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ContactPage from './components/ContactPage';
 import Profile from './components/Profile';
+import ForgotPassword from './components/ForgotPassword';
+import Details from './components/Details';
+import Sample from './components/Sample';
 
 
 
@@ -21,7 +24,9 @@ function App() {
       <Route path='/register' Component={RegistrationForm}></Route>
       <Route path='/contact' Component={ContactPage}></Route>
       <Route path='/profile' Component={Profile}></Route>
+      <Route path='/forgotpassword' Component={ForgotPassword}></Route>
      </Routes>
+     <Sample></Sample>
 
      </BrowserRouter>
    
