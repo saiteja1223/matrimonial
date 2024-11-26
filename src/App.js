@@ -10,6 +10,7 @@ import Profile from './components/Profile';
 import ForgotPassword from './components/ForgotPassword';
 import Details from './components/Details';
 import Sample from './components/Sample';
+import Carousel from './components/Carousel';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path='/forgotpassword' Component={ForgotPassword}></Route>
      </Routes>
      <Sample></Sample>
+     
 
      </BrowserRouter>
    

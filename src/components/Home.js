@@ -2,13 +2,15 @@ import React from 'react';
 import './home.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Carousel from './Carousel';
 function Home() {
   const navigate=useNavigate();
   
   return (
-    <div>
+    <div >
       {/* Hero Section */}
       <div className='homePageImage'>
+       
         <div className='homeContent'>
           <h1>Looking for the Perfect Partner?</h1>
           <p>Your journey to find love starts here. Join the thousands of successful matches!</p>
@@ -16,6 +18,55 @@ function Home() {
             <button className='ctaButton'><Link to={'/register'}>Sign Up Now</Link> </button>
             <button className='ctaButton'>Learn More</button>
           </div>
+        </div>
+        <div className='carousel' >
+          <Carousel></Carousel>
+        </div>
+        <div className='trusted'>
+          <div className='trustedmain'>
+            <div className='category'>
+              <div>
+                <img src='./Asserts/verify.svg'></img>
+              </div>
+              <div>
+                <div className='text'>
+                   <strong> 100%</strong>
+                </div>
+                <div>
+                Mobile-verified profiles
+                </div>
+              </div>
+              
+            </div>
+            <div className='category'>
+            <div>
+            <img src='./Asserts/count.svg'></img>
+            </div>
+              <div>
+                <div className='text'>
+                 <strong> 4 Crores+</strong>
+                </div>
+                <div>
+                Customers served
+                </div>
+              </div>
+                
+            </div>
+            <div className='category'>
+            <div>
+            <img src='./Asserts/life.svg'></img>
+            </div>
+              <div>
+                <div className='text'>
+               <strong> 23 Years</strong>
+                </div>
+                <div>
+                of successful matchmaking
+                </div>
+              </div> 
+              
+            </div>
+        </div>
         </div>
       </div>
 
